@@ -1,1 +1,22 @@
-<p>admindash works!</p>
+<table class="table table-striped">
+  <thead>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Blood</th>
+    <th>Prescription</th>
+    <th>Dose</th>
+    <th>Urgency</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let patient of patients">
+      <td>{{patient.id}}</td>
+      <td>{{patient.firstName}} {{patient.lastName}}</td>
+      <td>{{patient.age}}</td>
+      <td>{{patient.bloodGroup}}</td>
+      <td>{{patient.prescription}}</td>
+      <td>{{patient.dose}}</td>
+      <td>{{patient.urgency}}</td>
+    </tr>
+  </tbody>
+</table>
